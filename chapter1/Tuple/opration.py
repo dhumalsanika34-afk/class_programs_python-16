@@ -1,0 +1,5 @@
+t=(90,89,87,96,94,22,3,43,15,67,45,98,33,76)
+print("length=", len(t))
+print("sum",sum(t))
+print(t.count(90))
+print(t.index(3))
