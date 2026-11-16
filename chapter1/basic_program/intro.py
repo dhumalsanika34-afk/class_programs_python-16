@@ -1,0 +1,1 @@
+print("hi my name is sanika and i learning the python.")
