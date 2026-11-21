@@ -1,14 +1,17 @@
-class AgeInvalidException:
- def checkage(age):
-    if age<18:
-        raise AgeInvalidException("age is invalid")
+class AgeInvalidException(Exception):
+    pass
+
+def checkage(age):
+    if age < 18:
+        raise AgeInvalidException("Age is invalid")
     return age
 
 try:
-    obj=checkage
     checkage(18)
+    print("Age is valid")
 
 except AgeInvalidException as e:
-    print("error:,e")
+    print("Error:", e)
+
 finally:
-    print("code executed")
+    print("Code executed")
